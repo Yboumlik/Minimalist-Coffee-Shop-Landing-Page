@@ -1,0 +1,245 @@
+<!-- 
+  Copyright (c) 2025 YB.MugBeans. All rights reserved.
+  Author: Younes Boumlik
+  Email: younes.q.boumlik@gmail.com
+  Unauthorized copying of this file, via any medium is strictly prohibited.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YB.MugBeans | Pure Origin, Uncompromised Taste</title>
+    <meta name="description"
+        content="Single-Origin Excellence. Four exceptional beans, meticulously sourced. Experience coffee at its peak.">
+
+    <!-- Fonts: Syne (Wild/Display) & Space Mono (Technical/Minimal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">YB.MugBeans</a>
+        <div class="nav-links">
+            <a href="index.html#products">Beans</a>
+            <a href="index.html#about">Philosophy</a>
+            <a href="index.html#brew">Brew Guide</a>
+            <a href="login.html"><i class="ph ph-user"></i> Login</a>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode"><i class="ph ph-moon"></i></button>
+            <button id="cart-btn" class="icon-btn" aria-label="Cart">
+                <i class="ph ph-shopping-cart"></i>
+                <span id="cart-count" class="badge">0</span>
+            </button>
+        </div>
+        <a href="index.html#products" class="cta-button-small">Shop Now</a>
+    </nav>
+
+    <header class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="reveal-text hero-title">PURE<br>WILD<br>ORIGIN</h1>
+            <p class="reveal-text delay-1">Unearth the raw essence of the world's finest beans.</p>
+            <a href="#products" class="cta-button magnetic">Explore Collection</a>
+        </div>
+    </header>
+
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <h2>The Collection</h2>
+            <p>Pure Origin, Uncompromised Taste</p>
+            <div class="search-container">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" id="product-search" placeholder="Search beans, notes, or roast...">
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- 1. Ethiopian Mist -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/product1.jpg" alt="Ethiopian Mist Coffee Beans">
+                    <div class="roast-badge light">Light Roast</div>
+                </div>
+                <div class="product-info">
+                    <h3>Ethiopian Mist</h3>
+                    <div class="tags">
+                        <span>Yirgacheffe Highlands</span>
+                        <span>Washed</span>
+                    </div>
+                    <p class="profile">Bright & Floral</p>
+                    <ul class="tasting-notes">
+                        <li>Blueberry</li>
+                        <li>Jasmine</li>
+                        <li>Bergamot</li>
+                    </ul>
+                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
+                </div>
+            </article>
+
+            <!-- 2. Andes Gold -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/product2.jpg" alt="Andes Gold Coffee Beans">
+                    <div class="roast-badge medium">Medium Roast</div>
+                </div>
+                <div class="product-info">
+                    <h3>Andes Gold</h3>
+                    <div class="tags">
+                        <span>Colombian Andes</span>
+                        <span>Honey Process</span>
+                    </div>
+                    <p class="profile">Balanced & Smooth</p>
+                    <ul class="tasting-notes">
+                        <li>Hazelnut</li>
+                        <li>Caramel</li>
+                        <li>Milk Chocolate</li>
+                    </ul>
+                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
+                </div>
+            </article>
+
+            <!-- 3. Volcanic Dark -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/product3.jpg" alt="Volcanic Dark Coffee Beans">
+                    <div class="roast-badge dark">Dark Roast</div>
+                </div>
+                <div class="product-info">
+                    <h3>Volcanic Dark</h3>
+                    <div class="tags">
+                        <span>Guatemalan Highlands</span>
+                        <span>Natural</span>
+                    </div>
+                    <p class="profile">Bold & Intense</p>
+                    <ul class="tasting-notes">
+                        <li>Dark Chocolate</li>
+                        <li>Smoked Oak</li>
+                        <li>Spice</li>
+                    </ul>
+                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
+                </div>
+            </article>
+
+            <!-- 4. Reserve Blend -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/product4.jpg" alt="Reserve Blend Coffee Beans">
+                    <div class="roast-badge blend">Signature Blend</div>
+                </div>
+                <div class="product-info">
+                    <h3>Reserve Blend</h3>
+                    <div class="tags">
+                        <span>Brazil & Ethiopia</span>
+                        <span>Mixed Process</span>
+                    </div>
+                    <p class="profile">Complex & Versatile</p>
+                    <ul class="tasting-notes">
+                        <li>Stone Fruit</li>
+                        <li>Brown Sugar</li>
+                        <li>Velvet Finish</li>
+                    </ul>
+                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Bean Philosophy</h2>
+                <div class="text-block">
+                    <p>We believe great coffee needs no embellishment. That's why we offer only four exceptional
+                        varieties, each chosen for its unique character and story. No endless choices, no confusion—just
+                        pure, remarkable beans roasted to perfection.</p>
+                    <p>Small batch roasting ensures each bean reaches its full potential. We source directly, roast
+                        locally, and deliver within days of roasting. Because coffee this good deserves to be
+                        experienced at its peak.</p>
+                </div>
+            </div>
+            <div class="about-media">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/about-section-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="brew" class="brew-guide-section">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>Unlock the Flavor &mdash; Perfection in Simplicity &mdash; Unlock the Flavor &mdash; Perfection in
+                    Simplicity &mdash;</span>
+                <span>Unlock the Flavor &mdash; Perfection in Simplicity &mdash; Unlock the Flavor &mdash; Perfection in
+                    Simplicity &mdash;</span>
+            </div>
+        </div>
+
+        <div class="brew-grid">
+            <div class="brew-item">
+                <i class="ph ph-arrows-clockwise icon"></i>
+                <h4>Grind Setting</h4>
+                <p>Medium-coarse</p>
+            </div>
+            <div class="brew-item">
+                <i class="ph ph-thermometer-simple icon"></i>
+                <h4>Temperature</h4>
+                <p>92-96°C</p>
+            </div>
+            <div class="brew-item">
+                <i class="ph ph-timer icon"></i>
+                <h4>Brew Time</h4>
+                <p>3-4 minutes</p>
+            </div>
+            <div class="brew-item">
+                <i class="ph ph-scales icon"></i>
+                <h4>Ratio</h4>
+                <p>1:16 (coffee to water)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>YB.MugBeans</h2>
+                <p>Four beans, endless perfection</p>
+                <div class="social-icons">
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>123 Roast Street</p>
+                <p><a href="mailto:younes.q.boumlik@gmail.com">younes.q.boumlik@gmail.com</a></p>
+                <p><a href="https://github.com/Yboumlik" target="_blank">@Yboumlik</a></p>
+            </div>
+            <div class="footer-quote">
+                "Perfection in simplicity"
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
