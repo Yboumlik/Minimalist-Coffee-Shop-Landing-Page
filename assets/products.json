@@ -1,0 +1,66 @@
+[
+    {
+        "id": "p1",
+        "name": "Ethiopian Mist",
+        "price": 18.00,
+        "image": "assets/product1.jpg",
+        "roast": "Light",
+        "origin": "Yirgacheffe Highlands",
+        "process": "Washed",
+        "profile": "Bright & Floral",
+        "tasting_notes": [
+            "Blueberry",
+            "Jasmine",
+            "Wild Bergamot"
+        ],
+        "description": "A delicate and tea-like coffee from the birthplace of coffee. Known for its floral aroma and bright acidity."
+    },
+    {
+        "id": "p2",
+        "name": "Andes Gold",
+        "price": 19.50,
+        "image": "assets/product2.jpg",
+        "roast": "Medium",
+        "origin": "Colombian Andes",
+        "process": "Honey Process",
+        "profile": "Balanced & Smooth",
+        "tasting_notes": [
+            "Hazelnut",
+            "Caramel",
+            "Milk Chocolate"
+        ],
+        "description": "Grown at high altitudes in Colombia, this honey-processed bean offers a perfect balance of sweetness and body."
+    },
+    {
+        "id": "p3",
+        "name": "Volcanic Dark",
+        "price": 17.00,
+        "image": "assets/product3.jpg",
+        "roast": "Dark",
+        "origin": "Guatemalan Highlands",
+        "process": "Natural",
+        "profile": "Bold & Intense",
+        "tasting_notes": [
+            "Dark Chocolate",
+            "Smoked Oak",
+            "Spice"
+        ],
+        "description": "A bold choice for those who love a strong cup. Sourced from volcanic soil, delivering a smoky and intense flavor."
+    },
+    {
+        "id": "p4",
+        "name": "Reserve Blend",
+        "price": 22.00,
+        "image": "assets/product4.jpg",
+        "roast": "Blend",
+        "origin": "Brazil & Ethiopia",
+        "process": "Mixed Process",
+        "profile": "Complex & Versatile",
+        "tasting_notes": [
+            "Stone Fruit",
+            "Brown Sugar",
+            "Velvet Finish"
+        ],
+        "description": "Our signature blend combining the best of both worlds. Complex, rich, and perfect for espresso."
+    }
+]

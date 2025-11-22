@@ -76,94 +76,40 @@
         </div>
 
         <div class="product-grid">
-            <!-- 1. Ethiopian Mist -->
-            <article class="product-card">
-                <div class="product-image">
-                    <img src="assets/product1.jpg" alt="Ethiopian Mist Coffee Beans">
-                    <div class="roast-badge light">Light Roast</div>
-                </div>
-                <div class="product-info">
-                    <h3>Ethiopian Mist</h3>
-                    <div class="tags">
-                        <span>Yirgacheffe Highlands</span>
-                        <span>Washed</span>
-                    </div>
-                    <p class="profile">Bright & Floral</p>
-                    <ul class="tasting-notes">
-                        <li>Blueberry</li>
-                        <li>Jasmine</li>
-                        <li>Bergamot</li>
-                    </ul>
-                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
-                </div>
-            </article>
-
-            <!-- 2. Andes Gold -->
-            <article class="product-card">
-                <div class="product-image">
-                    <img src="assets/product2.jpg" alt="Andes Gold Coffee Beans">
-                    <div class="roast-badge medium">Medium Roast</div>
-                </div>
-                <div class="product-info">
-                    <h3>Andes Gold</h3>
-                    <div class="tags">
-                        <span>Colombian Andes</span>
-                        <span>Honey Process</span>
-                    </div>
-                    <p class="profile">Balanced & Smooth</p>
-                    <ul class="tasting-notes">
-                        <li>Hazelnut</li>
-                        <li>Caramel</li>
-                        <li>Milk Chocolate</li>
-                    </ul>
-                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
-                </div>
-            </article>
-
-            <!-- 3. Volcanic Dark -->
-            <article class="product-card">
-                <div class="product-image">
-                    <img src="assets/product3.jpg" alt="Volcanic Dark Coffee Beans">
-                    <div class="roast-badge dark">Dark Roast</div>
-                </div>
-                <div class="product-info">
-                    <h3>Volcanic Dark</h3>
-                    <div class="tags">
-                        <span>Guatemalan Highlands</span>
-                        <span>Natural</span>
-                    </div>
-                    <p class="profile">Bold & Intense</p>
-                    <ul class="tasting-notes">
-                        <li>Dark Chocolate</li>
-                        <li>Smoked Oak</li>
-                        <li>Spice</li>
-                    </ul>
-                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
-                </div>
-            </article>
-
-            <!-- 4. Reserve Blend -->
-            <article class="product-card">
-                <div class="product-image">
-                    <img src="assets/product4.jpg" alt="Reserve Blend Coffee Beans">
-                    <div class="roast-badge blend">Signature Blend</div>
-                </div>
-                <div class="product-info">
-                    <h3>Reserve Blend</h3>
-                    <div class="tags">
-                        <span>Brazil & Ethiopia</span>
-                        <span>Mixed Process</span>
-                    </div>
-                    <p class="profile">Complex & Versatile</p>
-                    <ul class="tasting-notes">
-                        <li>Stone Fruit</li>
-                        <li>Brown Sugar</li>
-                        <li>Velvet Finish</li>
-                    </ul>
-                    <a href="checkout.html" class="add-to-cart-btn magnetic">Add to Cart</a>
-                </div>
-            </article>
+            <!-- Products will be dynamically injected here -->
         </div>
+    </section>
+
+    <!-- Cart Slide-out -->
+    <div id="cart-slideout" class="cart-slideout">
+        <div class="cart-header">
+            <h3>Your Cart (<span id="cart-count-header">0</span>)</h3>
+            <button id="close-cart" class="icon-btn"><i class="ph ph-x"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items injected here -->
+            <div class="empty-cart-msg">Your cart is empty</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <a href="checkout.html" class="cta-button full-width">Checkout</a>
+        </div>
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="icon-btn close-modal-btn"><i class="ph ph-x"></i></button>
+            <div id="modal-body">
+                <!-- Content injected here -->
+            </div>
+        </div>
+    </div>
+    </div>
     </section>
 
     <section id="about" class="about-section">
@@ -227,9 +173,9 @@
                 <h2>YB.MugBeans</h2>
                 <p>Four beans, endless perfection</p>
                 <div class="social-icons">
-                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
-                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
-                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
                 </div>
             </div>
             <div class="footer-info">
